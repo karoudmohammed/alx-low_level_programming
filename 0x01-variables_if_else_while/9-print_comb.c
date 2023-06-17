@@ -17,7 +17,8 @@ for (s = 0; s < 128; s++)
 	if (isdigit(s))
 	{
 		putchar(s);
-		putchar(44);
+		if (s != 57)
+			putchar(44);
 		putchar(32);
 	}
 putchar('\n');
