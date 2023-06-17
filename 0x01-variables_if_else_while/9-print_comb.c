@@ -18,8 +18,10 @@ for (s = 0; s < 128; s++)
 	{
 		putchar(s);
 		if (s != 57)
+		{
 			putchar(44);
-		putchar(32);
+			putchar(32);
+		}
 	}
 putchar('\n');
 
