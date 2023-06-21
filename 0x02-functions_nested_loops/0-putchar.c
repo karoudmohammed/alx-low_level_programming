@@ -3,6 +3,7 @@
 
 /**
  * main - Entry point
+ * @c: The character to print
  *
  * Description: 'print _putchar'
  *
