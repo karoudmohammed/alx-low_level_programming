@@ -1,23 +1,12 @@
-#include <stdio.h>
-#include <string.h>
 #include "main.h"
 
 /**
- * print_alphabet - write each alphabet using _putchar function
+ * main - check the code
  *
- * Description: 'print alphabet using function'
- *
- * Return: Always 0 (Success)
+ * Return: Always 0.
  */
-
-
-void print_alphabet(void)
+int main(void)
 {
-char alpha[] = "abcdefghijklmnopqrstuvwxyz";
-unsigned int i;
-
-for (i = 0; i < strlen(alpha); i++)
-{
-	_putchar(alpha[i]);
-}
+    print_alphabet();
+    return (0);
 }
