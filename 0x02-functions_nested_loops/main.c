@@ -1,12 +1,13 @@
+#include <string.h>
 #include "main.h"
 
-/**
- * main - check the code
- *
- * Return: Always 0.
- */
-int main(void)
+void print_alphabet(void)
 {
-    print_alphabet();
-    return (0);
+char alpha[] = "abcdefghijklmnopqrstuvwxyz";
+unsigned int i;
+
+for (i = 0; i < strlen(alpha); i++)
+{
+	_putchar(alpha[i]);
+}
 }
