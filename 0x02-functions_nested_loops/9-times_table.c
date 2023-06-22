@@ -14,6 +14,7 @@ void format_res(int res)
 {
 if (res <= 9)
 {
+	_putchar(' ');
 	_putchar('0' + res);
 }
 else
