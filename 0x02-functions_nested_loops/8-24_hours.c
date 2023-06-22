@@ -1,9 +1,11 @@
 #include "main.h"
 
 /**
- * jack_bauer - Entry point
+ * format_minutes - a custom function
  *
- * Description: 'print every minute of the day'
+ * @n : the number of hour or minutes
+ *
+ * Description: 'display time'
  *
  * Return: Always 0 (Success)
  */
@@ -26,6 +28,14 @@ else
 	_putchar('0' + last_digit);
 }
 }
+
+/**
+ * jack_bauer - Entry point
+ *
+ * Description: 'print every minute of the day'
+ *
+ * Return: Always 0 (Success)
+ */
 
 void jack_bauer(void)
 {
