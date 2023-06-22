@@ -4,17 +4,21 @@
  * format_res - custom function
  *
  * @res: integer number
+ * @j: check variable
  *
  * Description: 'format output'
  *
  * Return: Always 0 (Success)
  */
 
-void format_res(int res)
+void format_res(int res, int j)
 {
 if (res <= 9)
 {
-	_putchar(' ');
+	if (j != 0)
+	{
+		_putchar(' ');
+	}
 	_putchar('0' + res);
 }
 else
@@ -45,7 +49,7 @@ for (i = 0; i < 10; i++)
 	for (j = 0; j < 10; j++)
 	{
 		res = i * j;
-		format_res(res);
+		format_res(res, j);
 		if (j < 9)
 		{
 			_putchar(',');
