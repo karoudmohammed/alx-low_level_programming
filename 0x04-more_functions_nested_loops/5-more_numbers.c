@@ -46,7 +46,6 @@ for (i = 0; i < 10; i++)
 	{
 		format_res(j);
 	}
-
 _putchar('\n');
 }
 }
