@@ -12,18 +12,18 @@
 
 void format_res(int j)
 {
-if (j <= 9)
-{
-	_putchar('0' + j);
-}
-else
-{
-	int first_digit = j / 10;
-	int last_digit = j % 10;
+int r;
 
-	_putchar('0' + first_digit);
-	_putchar('0' + last_digit);
+if (j == 0)
+{
+	return;
 }
+
+r = j % 10;
+
+format_res(j / 10);
+
+_putchar('0' + r);
 }
 
 /**
