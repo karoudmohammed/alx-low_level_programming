@@ -7,7 +7,7 @@
  *
  * description: function that returns the length of a string.
  *
- * return: the length of set of characters
+ * Return: the length of set of characters s
  */
 
 int _strlen(char *s)
