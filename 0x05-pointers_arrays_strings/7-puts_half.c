@@ -21,6 +21,7 @@ while (str[c] != '\0')
 
 if (c % 2 != 0)
 	half = (c - 1) / 2;
+	half++;
 else
 	half = c / 2;
 
