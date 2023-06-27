@@ -15,9 +15,9 @@ int _atoi(char *s)
 int i = 0;
 int c_plus = 0;
 int c_minus = 0;
-int num = 0;
+unsigned int num = 0;
+int result;
 int flag = 0;
-int sign = 0;
 
 for (; s[i] != '\0'; i++)
 {
@@ -40,10 +40,11 @@ for (; s[i] != '\0'; i++)
 	}
 }
 
-sign = c_plus - c_minus;
-
-if (sign < 0)
-	num *= -1;
+if (c_minus > c_plus || (c_plus - c_minus) > 1)
+{
+	result = num * -1;
+	return (result);
+}
 
 return (num);
 }
