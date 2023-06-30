@@ -13,7 +13,7 @@
 char *leet(char *s)
 {
 int i, j;
-char *enc = "a7A7e3E3o0O0t7T7l1L1";
+char *enc = "a4A4e3E3o0O0t7T7l1L1";
 
 for (i = 0; s[i] != '\0'; i++)
 {
