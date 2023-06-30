@@ -22,12 +22,10 @@ while (src[c] != '\0')
 	c++;
 }
 
-for (i = 0; i < n; i++)
+for (i = 0; i < n && i <= c; i++)
 {
 	dest[i] = src[i];
 }
-
-dest[i] = '\0';
 
 return (dest);
 }
