@@ -19,7 +19,9 @@ for (i = 0; s[i] != '\0'; i++)
 {
 	for (j = 0; enc[j] != '\0'; j++)
 	{
-		if (s[i] == enc[j])
+		if (s[i] == enc[j] && 
+				((s[i] >= 65 && s[i] <= 90) ||
+				 (s[i] >= 97 && s[i] <= 122)))
 		{
 			s[i] = enc[j + 1];
 			break;
