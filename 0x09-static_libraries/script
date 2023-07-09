@@ -1,0 +1,5 @@
+#!/bin/bash
+
+for i in *; do
+	gcc -Wall -pedantic -Werror -Wextra -std=gnu89 "$i" -o $(echo "$i" | cut -d'.' -f1).o
+done
