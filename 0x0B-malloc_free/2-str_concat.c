@@ -38,7 +38,7 @@ if (l == 0 || new == NULL)
 	return ('\0');
 }
 
-for (i = 0; i <= c1; i++)
+for (i = 0; i <= c1 && c1 != 0; i++)
 {
 	new[i] = s1[i];
 }
