@@ -23,7 +23,7 @@ if (str == NULL)
 
 for (i = 0; str[i] != '\0'; i++)
 {
-	c += 1;
+	++c;
 }
 
 dup = malloc(sizeof(char) * c);
