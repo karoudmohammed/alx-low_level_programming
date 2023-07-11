@@ -19,7 +19,7 @@ int i;
 
 if (arr == NULL || size == 0)
 {
-	return (arr);
+	return ('\0');
 }
 
 for (i = 0; i < (int) size; i++)
