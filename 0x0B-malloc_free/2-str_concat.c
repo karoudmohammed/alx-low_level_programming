@@ -18,28 +18,17 @@ char *str_concat(char *s1, char *s2)
 char *new;
 int i, j, c1 = 0, c2 = 0, l;
 
-if (s1 != NULL)
-{
-	for (i = 0; s1[i] != '\0'; i++)
-	{
-		c1 += 1;
-	}
-}
-
-if (s2 == NULL)
+for (i = 0; s1[i] != '\0'; i++)
 {
 	c1 += 1;
 }
 
-if (s2 != NULL)
+for (i = 0; s2[i] != '\0'; i++)
 {
-	for (i = 0; s2[i] != '\0'; i++)
-	{
-		c2 += 1;
-	}
-
 	c2 += 1;
 }
+
+c2 += 1;
 
 l = c1 + c2;
 
