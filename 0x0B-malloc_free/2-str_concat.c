@@ -23,12 +23,21 @@ for (i = 0; s1[i] != '\0'; i++)
 	c1 += 1;
 }
 
+if (s2 == NULL)
+{
+	c1 += 1;
+}
+
 for (i = 0; s2[i] != '\0'; i++)
 {
 	c2 += 1;
 }
 
-c2 += 1;
+if (s2 != NULL)
+{
+	c2 += 1;
+}
+
 l = c1 + c2;
 
 new = malloc(sizeof(char) * l);
@@ -38,12 +47,12 @@ if (l == 0 || new == NULL)
 	return ('\0');
 }
 
-for (i = 0; i <= c1 && c1 != 0; i++)
+for (i = 0; i <= c1 && c1 != 0 && s1 != NULL; i++)
 {
 	new[i] = s1[i];
 }
 
-for (j = 0; i <= l; i++, j++)
+for (j = 0; i <= l && s2 != NULL; i++, j++)
 {
 	new[i] = s2[j];
 }
