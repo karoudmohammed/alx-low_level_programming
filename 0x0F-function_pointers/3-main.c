@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
 int (*pFunc)(int, int);
 int result;
 
-if (argc < 1 || argv == NULL)
+if (argc < 4 || argv == NULL)
 {
 	printf("Error\n");
 	exit(98);
