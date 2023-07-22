@@ -1,3 +1,6 @@
+#ifndef MAIN_H
+#define MAIN_H
+
 /**
  * struct dog - animal
  * @name: str
@@ -6,6 +9,7 @@
  *
  * Description: new type of dog
  */
+
 struct dog
 {
 	char *name;
@@ -13,3 +17,4 @@ struct dog
 	char *owner;
 };
 
+#endif /* MAIN_H */
