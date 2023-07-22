@@ -30,6 +30,7 @@ if (d == NULL && c_name == NULL && c_owner == NULL)
 {
 	free(c_name);
 	free(c_owner);
+	free(d);
 	return (NULL);
 }
 
