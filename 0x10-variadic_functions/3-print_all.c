@@ -46,11 +46,9 @@ while (i < count)
 			if (str != NULL)
 			{
 				printf("%s", str);
+				break;
 			}
-			else
-			{
-				printf("nil");
-			}
+			printf("nil");
 			break;
 
 		default:
