@@ -28,7 +28,7 @@ for (i = 0; i < n; i++)
 
 	if (str == NULL)
 	{
-		printf("nil");
+		printf("(nil)");
 	}
 	else
 	{
