@@ -48,7 +48,7 @@ while (i < count)
 				printf("%s", str);
 				break;
 			}
-			printf("nil");
+			printf("(nil)");
 			break;
 
 		default:
