@@ -1,6 +1,6 @@
 section .data
-    hello: db "Hello, Holberton", 0
-    fmt: db "%s\n", 0
+    hello: db "Hello, Holberton", 0xa, 0
+    fmt: db "%s", 0
 section .text
     global main
     extern printf
