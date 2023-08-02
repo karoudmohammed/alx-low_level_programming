@@ -15,14 +15,10 @@ void free_listint(listint_t *head)
 {
 listint_t *node;
 
-node = malloc(sizeof(listint_t));
-
 while (head != NULL)
 {
 	node = head->next;
 	free(head);
 	head = node;
 }
-
-free(node);
 }
