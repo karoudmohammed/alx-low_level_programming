@@ -17,7 +17,7 @@ listint_t *node;
 
 if (head == NULL)
 {
-	exit(139);
+	return;
 }
 while (*head != NULL)
 {
