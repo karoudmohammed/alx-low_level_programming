@@ -21,7 +21,8 @@ while (*head != NULL)
 	free(*head);
 	*head = node;
 }
-
-free(*head);
-*head = NULL;
+if (*head != NULL)
+{
+	*head = NULL;
+}
 }
