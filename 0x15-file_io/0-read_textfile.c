@@ -32,6 +32,11 @@ if (f < 0)
 
 count = read(f, buff, letters);
 
+if (count < 0)
+{
+	return (0);
+}
+
 while (*buff)
 {
 	w = write(1, &(*buff), 1);
