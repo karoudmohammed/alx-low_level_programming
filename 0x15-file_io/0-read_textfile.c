@@ -49,8 +49,9 @@ if (count == 0)
 
 w = write(1, (void *)buff, count);
 
-if (w < 0)
+if (w == -1)
 {
+	write(2, (void *)buff, count);
 	close(f);
 	free(buff);
 	return (0);
