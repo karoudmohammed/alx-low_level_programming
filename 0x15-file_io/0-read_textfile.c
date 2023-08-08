@@ -37,7 +37,7 @@ if (count < 0)
 	return (0);
 }
 
-w = write(1, &buff, count);
+w = write(1, (void*)buff, count);
 
 if (w < 0)
 {
