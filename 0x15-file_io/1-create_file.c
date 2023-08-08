@@ -32,7 +32,7 @@ if (fd == -1)
 	}
 }
 
-if (text_content)
+if (text_content != NULL)
 {
 	while (text_content[len] != '\0')
 	{
@@ -40,7 +40,8 @@ if (text_content)
 	}
 	w_bytes = write(fd, text_content, len);
 }
-else
+
+if(text_content == NULL)
 {
 	w_bytes = write(fd, '\0', 1);
 }
