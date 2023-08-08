@@ -41,7 +41,7 @@ if (text_content != NULL)
 	w_bytes = write(fd, text_content, len);
 }
 
-if(text_content == NULL)
+if (text_content == NULL)
 {
 	w_bytes = write(fd, '\0', 1);
 }
