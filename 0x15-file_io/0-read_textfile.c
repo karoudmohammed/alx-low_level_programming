@@ -18,8 +18,14 @@ ssize_t count;
 int f, w;
 char *buff = (char *)malloc(letters);
 
+if (buff == NULL)
+{
+	return (0);
+}
+
 if (filename == NULL)
 {
+	free(buff);
 	return (0);
 }
 
