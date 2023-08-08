@@ -22,7 +22,7 @@ if (filename == NULL)
 	return (-1);
 }
 
-fd = open(filename, O_WRONLY |O_TRUNC);
+fd = open(filename, O_WRONLY | O_TRUNC);
 if (fd == -1)
 {
 	fd = creat(filename, S_IREAD | S_IWRITE);
