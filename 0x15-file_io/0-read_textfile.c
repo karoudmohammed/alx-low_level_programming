@@ -37,12 +37,15 @@ if (count < 0)
 	return (0);
 }
 
-w = write(1, (void*)buff, count);
+w = write(1, (void *)buff, count);
 
 if (w < 0)
 {
 	return (0);
 }
+
+close(f);
+free(buff);
 
 return (count);
 }
