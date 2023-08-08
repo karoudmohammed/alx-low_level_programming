@@ -28,7 +28,6 @@ if (filename == NULL)
 	free(buff);
 	return (0);
 }
-
 f = open(filename, O_RDONLY);
 
 if (f == -1)
@@ -36,7 +35,6 @@ if (f == -1)
 	free(buff);
 	return (0);
 }
-
 count = read(f, buff, letters);
 close(f);
 
@@ -46,14 +44,13 @@ if (count == 0)
 	return (0);
 }
 
-w_bytes = write(1, (void *)buff, (count < (ssize_t)letters ? (size_t)count : letters));
-
+w_bytes = write(1, (void *)buff, (count < (ssize_t)letters ?
+			(size_t)count : letters));
 if (w_bytes == -1)
 {
 	free(buff);
 	return (0);
 }
-
 free(buff);
 return (count);
 }
