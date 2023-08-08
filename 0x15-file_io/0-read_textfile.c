@@ -37,14 +37,11 @@ if (count < 0)
 	return (0);
 }
 
-while (*buff)
+w = write(1, &buff, count);
+
+if (w < 0)
 {
-	w = write(1, &(*buff), 1);
-	if (w < 0)
-	{
-		return (0);
-	}
-	buff++;
+	return (0);
 }
 
 return (count);
