@@ -46,7 +46,7 @@ if (count == 0)
 	return (0);
 }
 
-w = write(1, (void *)buff, count);
+w = write(1, (void *)buff, (count < (ssize_t)letters ? (size_t)count : letters));
 
 if (w == -1)
 {
