@@ -55,5 +55,5 @@ if (w_bytes == -1)
 }
 
 free(buff);
-return (w_bytes);
+return (count);
 }
