@@ -31,15 +31,19 @@ if (filename == NULL)
 
 f = open(filename, O_RDONLY);
 
-if (f < 0)
+if (f == -1)
 {
+	close(f);
+	free(buff);
 	return (0);
 }
 
 count = read(f, buff, letters);
 
-if (count < 0)
+if (count == 0)
 {
+	close(f);
+	free(buff);
 	return (0);
 }
 
@@ -47,6 +51,8 @@ w = write(1, (void *)buff, count);
 
 if (w < 0)
 {
+	close(f);
+	free(buff);
 	return (0);
 }
 
