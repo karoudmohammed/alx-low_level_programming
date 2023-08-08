@@ -14,8 +14,8 @@
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-ssize_t count;
-int f, w;
+ssize_t count, w_bytes;
+int f;
 char *buff = (char *)malloc(letters);
 
 if (buff == NULL)
@@ -46,15 +46,14 @@ if (count == 0)
 	return (0);
 }
 
-w = write(1, (void *)buff, count);
+w_bytes = write(1, (void *)buff, (count < (ssize_t)letters ? (size_t)count : letters));
 
-if (w == -1)
+if (w_bytes == -1)
 {
 	free(buff);
 	return (0);
 }
 
 free(buff);
-
-return (w);
+return (w_bytes);
 }
